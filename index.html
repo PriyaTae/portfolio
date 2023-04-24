@@ -58,7 +58,7 @@
                             <a href="https://www.instagram.com/i.means.me._.u.means.v?igshid=ZDdkNTZiNTM=" class="home__social-link"><i class='bx bxl-instagram'></i></a>
                         </div>
 
-                        <a download="assets/pdf/Brown Modern Minimalist Graphic Designer Resume.pdf" href="assets/pdf/Brown Modern Minimalist Graphic Designer Resume.pdf" class="button home__button">Download Resume</a>
+                        <a href="Brown Modern Minimalist Graphic Designer Resume.pdf" download class="button home__button">My Resume</a>
                     </div>
                 </div>
             </section>
@@ -376,5 +376,12 @@
         </footer>
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
+
+        <script>
+            const btn=document.querySelector("button")
+            btn.onclick=()=>{
+                window.print();
+            }
+        </script>
     </body>
 </html>
