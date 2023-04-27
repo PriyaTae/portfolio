@@ -43,3 +43,15 @@ function scrollActive(){
         }
     })
 }
+
+function SendMail(){
+    var params={
+        from_name : document.getElementById("name").value,
+        email_id : document.getElementById("mail").value,
+        subject : document.getElementById("sub").value,
+        message : document.getElementById("msg").value
+    }
+    emailjs.send("service_henrw0h","template_6sn2aty",params).then(function (res){
+        alert("Success!"+res.status);
+    })
+}

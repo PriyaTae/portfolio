@@ -3,6 +3,16 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+        (function(){
+            emailjs.init("unuORcm85KLBxF3oV");
+        })();
+        </script>
+
+<script src="assets/js/main.js"></script>
 
         <!-- ===== CSS ===== -->
         <link rel="stylesheet" href="assets/css/styles.css">
@@ -11,6 +21,8 @@
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>        
 
         <title>Responsive personal portfolio | Harris</title>
+
+
     </head>
     <body>
         <!--===== HEADER =====-->
@@ -46,7 +58,7 @@
                 <div class="home__container bd-grid">
                     <div class="home__data">
                         <div class="home__img">
-                            <img src="assets/img/work1.jpg" alt="">
+                            <img src="assets/img/Copy of me.jpg" alt="">
                         </div>
 
                         <h1 class="home__title">Priyadharshini</h1>
@@ -73,7 +85,7 @@
                         <p class="about__description">
                             Hi. I'm a passionate fresher and searching for a job to gain confidence and fame using my potential in the field of "Web Development" ,and express my innovative creative skills for self and company growth.
                         </p>
-                        <img src="assets/img/work1.jpg" alt="" class="about__img">
+                        <img src="assets/img/work6.jpg" alt="" class="about__img">
                     </div>
 
                     <div class="about__information">
@@ -290,7 +302,7 @@
                         <img src="assets/img/work3.jpg" alt="">
 
                         <div class="works__data">
-                            <a href="#" class="works__link"><i class='bx bx-link-alt' ></i></a>
+                            <a href="https://github.com/PriyaTae/reactpizzeria" class="works__link"><i class='bx bx-link-alt' ></i></a>
                             <span class="work__title">Pizzeria Shop Website</span>
                         </div>
 
@@ -331,13 +343,13 @@
                 <h2 class="section-title">Get In Touch</h2>
 
                 <div class="contact__container bd-grid">
-                    <form action="https://formsubmit.co/vgpriya1105@email.com" method="post" class="contact__form">
+                    <form action="" method="post" onclick="SendMail()" class="contact__form">
                         <div class="contact__inputs">
-                            <input type="text" placeholder="Name" required class="contact__input">
-                            <input type="email" placeholder="Email" required class="contact__input">
+                            <input type="text" placeholder="Name" id="name" required class="contact__input">
+                            <input type="email" placeholder="Email" id="email" required class="contact__input">
                         </div>
-                        <input type="text" placeholder="Subject" required class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" required placeholder="Message"  class="contact__input"></textarea>
+                        <input type="text" placeholder="Subject" id="sub" required class="contact__input">
+                        <textarea id="msg" id="" cols="0" rows="10" required placeholder="Message"  class="contact__input"></textarea>
                         <input type="submit" value="Send Message" class="button contact__button">
                     </form>
                     
@@ -382,6 +394,8 @@
             btn.onclick=()=>{
                 window.print();
             }
+            
+
         </script>
     </body>
 </html>

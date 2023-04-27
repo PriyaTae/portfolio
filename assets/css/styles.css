@@ -207,8 +207,8 @@ img{
 }
 
 .home__img{
-    padding-top: 1.3rem;
-    padding-left: .8rem;
+    padding-top:0;
+    padding-left:.3rem;
     width: 160px;
     height: 160px;
     background-color: var(--first-color);
